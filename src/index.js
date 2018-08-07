@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -94,7 +95,9 @@ class Game extends React.Component {
       const locationDesc = move ?
         'location: (' + this.state.history[move].locations.x + ', ' + this.state.history[move].locations.y + ')' : ''
       return (
-        <li key={move}>
+        <li 
+          key={move} 
+          style={ move === this.state.stepNumber ? {fontWeight: 'bold'} : {fontWeight: 'normal'}}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
           <text>  {locationDesc}</text>
         </li>
