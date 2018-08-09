@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project is practice of react [tutorial](https://reactjs.org/tutorial/tutorial.html).
 
 # React-tutorial-improvement
 
